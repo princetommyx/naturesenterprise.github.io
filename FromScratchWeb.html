@@ -1,0 +1,102 @@
+<!-- created by : SwapniL -->
+<html>
+  <head>
+	<title>Loading Animation</title>
+	<style>
+	  *, *::after, *::before{
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	  }
+	  body{
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	  }
+	  .base{
+		height: 250px;
+		width: 250px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	  }
+	  .chars{
+		font-size: xxx-large;
+		animation-name: slide;
+		animation-duration: 2s;
+		animation-delay: var(--delay);
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+	  }
+	  .one{
+		color: red;
+		--delay : 0ms;
+	  }
+	  .two{
+		color: green;
+		--delay : 100ms;
+	  }
+	  .three{
+		color: blue;
+		--delay : 200ms;
+	  }
+	  .four{
+		color: maroon;
+		--delay : 300ms;
+	  }
+	  .five{
+		color: orange;
+		--delay : 400ms;
+	  }
+	  .six{
+		color: yellowgreen;
+		--delay : 500ms;
+	  }
+	  .seven{
+		color: blueviolet;
+		--delay : 600ms;
+	  }
+	  .eight{
+		--delay : 700ms;
+	  }
+	  .nine{
+		--delay : 800ms;
+	  }
+	  .ten{
+		--delay : 900ms;
+	  }
+	  @keyframes slide {
+		0%{
+		  transform: translateY(0px);
+		}
+		10%{
+		  transform: translateY(-20px);
+		}
+		20%{
+		  transform: translateY(0px);
+		}
+	  }
+	</style>
+  </head>
+
+  
+
+  <body>
+	<div class="base">
+	  <div class="chars one">L</div>
+	  <div class="chars two">O</div>
+	  <div class="chars three">A</div>
+	  <div class="chars four">D</div>
+	  <div class="chars five">I</div>
+	  <div class="chars six">N</div>
+	  <div class="chars seven">G</div>
+	  <div class="chars eight">.</div>
+	  <div class="chars nine">.</div>
+	  <div class="chars ten">.</div>
+	</div>
+	<div class="yt">
+	  <a href="WebProject1.html" target="_natures"> <h1>NATURES ENTERPRISE</h1></a>
+	</div>
+  </body>
+</html>

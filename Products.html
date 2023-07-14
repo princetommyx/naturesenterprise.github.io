@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Popup</title>
+  <style>
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .popup {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-weight: bold;
+      color: #dc1e9c;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body bgcolor="purple">
+  <button onclick="openPopup()">Open Product Popup</button>
+
+  <div id="productPopup" class="overlay">
+    <div class="popup">
+      <h2>Available Products</h2>
+      <ul>
+        <li><a href="CarAccessories.html"><button><B>Car Accessories</B></button></a></li> <br>
+        <li><a href="StudioAccessories.html"><button><b>Studio Accessories</b></button></a></li> <br>
+        <li><a href="CameraAccessories.html"><button><b>Camera Accessories</b></button></a></li> <br>
+        <li><a href="ElectronicGadgets.html"><button><b>Other Electronic Gadgets</b></button></a>
+      </ul>
+      <span class="close-btn" onclick="closePopup()">X</span>
+    </div>
+  </div>
+
+  <script>
+    function openPopup() {
+      document.getElementById("productPopup").style.display = "flex";
+    }
+
+    function closePopup() {
+      document.getElementById("productPopup").style.display = "none";
+    }
+  </script>
+</body>
+</html>
